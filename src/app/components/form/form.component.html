@@ -1,0 +1,25 @@
+<div *ngIf="stateObject" class="container">
+    <h2> {{ stateObject?.region }} Statistics </h2>
+    <div fxLayout="column">
+        <div fxLayout="row" fxLayoutAlign="space-between">
+            <h4> At Least One Measure: </h4>
+            <p> {{ stateObject?.at_least_one_measure }} </p>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+            <h4> Immunization Measures: </h4>
+            <p> {{ stateObject?.immunization_measure }} </p>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+            <h4> Reportable Results: </h4>
+            <p> {{ stateObject?.reportable_lab_results_measure }} </p>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+            <h4> Syndromic Measure: </h4>
+            <p> {{ stateObject?.syndromic_surveillance_measure }} </p>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+            <h4> Registry Measure: </h4>
+            <p> {{ stateObject?.registry_measure }} </p>
+        </div>
+    </div>
+</div>
